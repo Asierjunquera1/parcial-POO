@@ -25,11 +25,12 @@ fecha_aperura_cuenta3=datetime.now()- timedelta(days=random.randint(1, 365))
 fecha_vencimiento_cuenta3=datetime.now() + timedelta(days=random.randint(1, 365))
 numero_cuenta_cuenta3=random.randint(100000000000, 999999999999)
 saldo_cuenta3=10000
+saldo_negativo_maximo=int(input("Cual es el saldo maximo negativo?"))
 
 
-cuenta1=Cuenta_bancaria()
-cuenta2=Cuenta_plazo_fijo(Cuenta_bancaria)
-cuenta3=Cuenta_Vip(Cuenta_bancaria)
+cuenta1=Cuenta_bancaria(ID_cuenta1, nombre_titular_cuenta1, fecha_aperura_cuenta1, numero_cuenta_cuenta1, saldo_cuenta1)
+cuenta2=Cuenta_plazo_fijo(Cuenta_bancaria(ID_cuenta2, nombre_titular_cuenta2, fecha_aperura_cuenta2, numero_cuenta_cuenta2, saldo_cuenta2, datetime.now(), fecha_vencimiento_cuenta2))
+cuenta3=Cuenta_Vip(Cuenta_bancaria(ID_cuenta3, nombre_titular_cuenta3, fecha_aperura_cuenta3, numero_cuenta_cuenta3, saldo_cuenta3, saldo_negativo_maximo))
 
 
 
