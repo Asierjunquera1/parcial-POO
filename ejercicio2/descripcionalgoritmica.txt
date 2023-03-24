@@ -1,0 +1,37 @@
+clase Animal:
+    atributos:
+    especie
+    habitat
+    métodos:
+     desplazarse()
+    alimentarse()
+    
+clase Mamífero hereda de Animal:
+    atributos:
+    
+    métodos:
+    amamantar()
+    
+clase Ovíparo hereda de Animal:
+    atributos:
+ 
+    métodos:
+        - poner_huevo()
+    
+clase Pollo hereda de Ovíparo:
+    atributos:
+
+    métodos:
+        - cacarear()
+    
+clase Gato hereda de Mamífero:
+    atributos:
+
+    métodos:
+        - maullar()
+    
+clase Ornitorrinco hereda de Mamífero y Ovíparo:
+    atributos:
+
+    métodos:
+        - nadar()
